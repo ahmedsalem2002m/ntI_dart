@@ -1,17 +1,18 @@
 void main() {
-  List<int> y = [1, 2, 3, 4, 5];
-  var result = y.where((int element) => element == 2);
-  print(result);
+  List<int> y = [1, -2, 3, -4, 5];
+  Iterable<int> x = (y.reversed); 
 
-  print(y.sublist(0));
+  y.add(6);
 
-print(  y.reduce((value,element)=>value+element));
-  // print(y.indexOf(4));
-  // y.sort();
-  // print(y);
-  // print(y.contains(100));
-
-  // Set<int> set = y.toSet();
-  // print(set);
-  // print(set.add(2));
+  print(x) ;
+  
+  
+  // print(y.map((element){
+  //   int sum = 0;
+  //   if(element >= 0)
+  //   return element*2;
+  //   else
+  //   return 0;
+  // }).toList());
+  // print(y.join(", "));
 }
