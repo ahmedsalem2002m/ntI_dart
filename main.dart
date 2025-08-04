@@ -1,42 +1,17 @@
 void main() {
-  List x = [1, "A", true, 3.4, 5];
-
   List<int> y = [1, 2, 3, 4, 5];
-  List<String> z = ["Ahmed", "Ali", "Mohamed", "Sayed"];
+  var result = y.where((int element) => element == 2);
+  print(result);
 
-  y.addAll([6, 7, 8]);
-  z.addAll(["sama", "sahar"]);
-  print(y);
-  print(z);
+  print(y.sublist(0));
 
-  y.insertAll(1, [100, 200, 300]);
-  print(y);
-  print(y.length);
+print(  y.reduce((value,element)=>value+element));
+  // print(y.indexOf(4));
+  // y.sort();
+  // print(y);
+  // print(y.contains(100));
 
-  y.removeLast();
-  print(y);
-
-  y.removeAt(1);
-  print(y);
-  print(y.length);
-
-  print(y.remove(1));
-  // // List<int> numbers = List.filled(200, 2);
-  // List<int> numbers = List.generate(10, (index) {
-  //   return index + 1;
-  // });
-  // List<int> numbers2 = List.generate(10, (index) {
-  //   return index * 2;
-  // });
-  // List<String> students = List.generate(5, (index) {
-  //   return "student ${index+1}";
-  // });
-
-  // // for(int i =0;i<100;i++){
-  // //   numbers.add(i+1);
-  // // }
-
-  // print(numbers);
-  // print(numbers2);
-  // print(students);
+  // Set<int> set = y.toSet();
+  // print(set);
+  // print(set.add(2));
 }
