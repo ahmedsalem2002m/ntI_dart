@@ -1,18 +1,61 @@
 void main() {
-  List<int> y = [1, -2, 3, -4, 5];
-  Iterable<int> x = (y.reversed); 
+  // Map<String, Map<String, Map<String, dynamic>>> m = {
+  //   "Ahmed": {
+  //     "subjects": {"math": 90, "phis": 94, "chmas": 96},
+  //     "info": {"age": 17, "address": "cairo"},
+  //   },
+  // };
+  // m.addAll({
+  //   "Ali": {
+  //     "subjects": {"math": 93, "phis": 93, "chmas": 93},
+  //     "inf": {"age": 16, "address": "cairo"},
+  //   },
+  // });
+  Map<String,int> m = {
+    "ahmed":91,
+    "ali":95,
+    "sara":89,
+    "sama":85,
+    "mohamed":88,
+  };
 
-  y.add(6);
+  
+  // Map<String,int> s  ={
+  //   "sara":94
+  // };
+  // m.addEntries(s.entries);
 
-  print(x) ;
-  
-  
-  // print(y.map((element){
-  //   int sum = 0;
-  //   if(element >= 0)
-  //   return element*2;
-  //   else
-  //   return 0;
-  // }).toList());
-  // print(y.join(", "));
+
+  //m["Ahmed"] = 99;
+  // m.update("sara",(value)=> 91,ifAbsent:()=> 100);
+
+  // m.remove("Ahmed");
+  // print(m.length);
+
+
+  // m.removeWhere((key,value)=>value<90);
+
+
+//  print( m.containsKey("sara"));
+//  print( m.containsValue(91));
+
+
+// for(int i =0;i<m.length;i++){
+//   print('''
+// Student Name : ${m.entries.elementAt(i).key}
+// Student degree : ${m.entries.elementAt(i).value}
+// ''');
+// }
+
+// m.forEach((key,value){
+//   print("$key got $value");
+// });
+
+// for(var s in m.entries){
+//   print("${s.key} : ${s.value}");
+// };
+
+
+
+  print(m);
 }
